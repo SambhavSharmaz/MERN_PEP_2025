@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juice & Fruit Bill</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .bill-container {
+      background: #fff;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #4CAF50;
+    }
+    .bill-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #ccc;
+    }
+    .total {
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bill-container">
+    <h2>Final Bill</h2>
+    <div class="bill-item">
+      <span>Juice (with GST):</span>
+      <span id="juiceBill"></span>
+    </div>
+    <div class="bill-item">
+      <span>Fruit (without GST):</span>
+      <span id="fruitBill"></span>
+    </div>
+    <div class="bill-item total">
+      <span>Total Amount:</span>
+      <span id="totalBill"></span>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
