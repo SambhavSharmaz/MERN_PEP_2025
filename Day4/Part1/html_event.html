@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card {
+        width: 200px;
+        height: 450px;
+        background-color: #8f8f8f;
+        margin: 10px;
+        display: inline-block;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        display: none;
+        z-index: 1000;
+      }
+      h1 {
+        color: #000000;
+        font-size: x-large;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-align: center;
+      }
+      footer {
+        color: #000000;
+        font-size: large;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-align: center;
+        align-content: center;
+        width: auto;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Recipe Store</h1>
+    <main></main>
+    <div
+      class="overlay"
+      id="overlay"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+      "
+    ></div>
+
+    <div
+      class="popupview"
+      id="popup"
+      style="
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+      "
+    >
+      <p>This is a popup!</p>
+      <button id="close-btn">Close</button>
+    </div>
+    <div class="popup" id="popUp">
+      <p>Hello! My name is sambhav</p>
+      <button class="close-btn" id="closeBtn">Close</button>
+    </div>
+    <footer>Recipe Store &copy; 2022</footer>
+  </body>
+  <script src="app_event.js"></script>
+</html>
