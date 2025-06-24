@@ -1,0 +1,39 @@
+Lets suppose that you are trying to change the color of your layout of webpage, from white to green color in background. Now what happens is that instead of 
+just changing the color of the layout, the whole webpage will be destroyed and created anew with the new color. This is called Reflow.
+
+Reflow is the process of rendering the webpage again after any changes in the DOM. It is a costly process and should be avoided as much as possible.
+Although this is fast in rendering the update, it will start to slow down the performance of the webpage as the number of changes increases.
+
+Repaint is the process of rendering the webpage again after any changes in the CSS. It is a costly process and should be avoided as much as possible.
+
+Reflow is 10 times slower and costlier than Repaint
+
+Some ways to avoid reflow are:
+1. Patch-Update: React will only update the changes made to the DOM and not the whole DOM. This is called patch-update. This is faster than reflow.
+2. CSS Class: Instead of changing the style of the element one by one, we can change the class of the element and apply the styles in the CSS file. This is faster than reflow.
+3. CSS Property: Instead of changing the style of the element one by one, we can change the property of the element and apply the styles in the CSS file. This is faster than reflow.
+
+HTML document is a the web browser's representation of the webpage. It is a tree-like structure of the webpage.
+
+DOM is able to bring changes to the HTML document. It is a programming interface that allows web developers to change the content, structure, and style of the HTML document.
+BOM is a programming interface that allows web developers to interact with the browser. It is a part of the DOM.
+
+React is a JavaScript library for building user interfaces. It is a declarative, component-based library that allows developers to build reusable UI components. React is used to build single-page applications (SPAs) and mobile applications.
+React is a black box that allows bring changes the url.
+
+Never talk to DOM directly instead utilize the React API to bring changes to the DOM. Though there will be instances where you will have to talk to DOM directly. In such cases, you can use the ref attribute to access the DOM element directly.
+But 99% of the time, you should not talk to DOM directly.
+
+JS DOM is essentially the same as the DOM, but it is a JavaScript object that represents the DOM. 
+
+In HTML, 2 DOMs are created where one is virtual DOM and the other is real DOM. Virtual DOM is a representation of the real DOM. React will only update the virtual DOM and not the real DOM. This is called patch-update.
+
+HTML has 2 tags that are shown everytime a basic webpage is created, body and head. body tag is used to show the content of the webpage and head tag is used to show the metadata of the webpage.
+
+Body has multiple tags like div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, a, img, form, input, button, select, option, textarea, table, tr, td, th, etc.
+
+Head has multiple tags like title, meta, link, script, style, etc.
+
+DOM forgets what happend to the previous updated webpage while React remembers what happened to the previous updated webpage. This is called state management.
+
+State management is the process of managing the state of the application. It is the process of keeping track of the data that is being used in the application. State management is important because it allows developers to keep track of the data that is being used in the application and to update the data as needed.
