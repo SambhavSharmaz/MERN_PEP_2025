@@ -6,6 +6,7 @@ const App = () =>{
     // M2: Homepage is a component
     <div>
       <Homepage/>
+      <li>This is the App.jsx</li>
     </div>
   )
 }

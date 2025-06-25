@@ -1,10 +1,11 @@
 import { NavigationBar } from "../Components/NavigationBar";
+import { SearchBox } from "../Components/SearchBox";
 const Homepage = () => {
     return (
-        <div className="Card">
+        <div>
             <NavigationBar />
-            <h1>Homepage</h1>
-            <p>This is the homepage</p>
+            <SearchBox/>
+            <p>This is the Homepage.jsx</p>
         </div>
     )
 }
