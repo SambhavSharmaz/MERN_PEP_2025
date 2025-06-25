@@ -1,6 +1,6 @@
 const domroot = document.getElementById("root");
 
-const reactdom = ReactDOM.createRoot(domroot);
+const reactroot = ReactDOM.createRoot(domroot);
 
 //This is the easiest way to render a react component but not suitable for large scale applications
 // reactdom.render(
@@ -14,28 +14,37 @@ const reactdom = ReactDOM.createRoot(domroot);
 // )
 
 //This is the best way to render a react component
-const card1 = (
-  <div className="card">
-    <h1>Invitation</h1>
-    <p>Description</p>
-  </div>
-);
-const card2 = (
-  <div className="card">
-    <h1>Warning!!</h1>
-    <p>Description</p>
-  </div>
-);
-const card3 = (
-  <div className="card">
-    <h1>Title</h1>
-    <p>Description</p>
-  </div>
-);
+// const card1 = (
+//   <div className="card">
+//     <h1>Invitation</h1>
+//     <p>Description</p>
+//   </div>
+// );
 
-const card4 = () =>{
+// const card2 = (
+//   <div className="card">
+//     <h1>Warning!!</h1>
+//     <p>Description</p>
+//   </div>
+// );
+// const card3 = (
+//   <div className="card">
+//     <h1>Title</h1>
+//     <p>Description</p>
+//   </div>
+// );
+
+const Card1 = (obj) =>{
     return(<div className="card">
-        <h1>Title</h1>
+        <h1>{obj.title}</h1>
+        <p>Description</p>
+    </div>
+    )
+}
+
+const card2 = (title) =>{
+    return(<div className="card">
+        <h1>-----FIN------</h1>
         <p>Description</p>
     </div>
     )
@@ -43,10 +52,12 @@ const card4 = () =>{
 
 const container = (
   <div>
-    {card1}
-    {card2}
-    {card3}
-    {card4}
+    {Card1({title:"hello"})}
+    {/* The const Card1 needs to be capital instead of card1 for the creation of tag beacuse its case sensitive */}
+    <Card1 title="bye-bye"></Card1>
+    {card2("The End")}
+    {/* {card2}
+    {card3} */}
   </div>
 );
-reactdom.render(container);
+reactroot.render(container);
