@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
 
-const domRoot = document.getElementById('root')
-const reactRoot = ReactDOM.createRoot(domRoot)
+const rootDOM = document.getElementById('root')
+const reactroot = ReactDOM.createRoot(rootDOM)
 
-reactRoot.render(
+reactroot.render(
   <StrictMode>
     <App />
   </StrictMode>,
