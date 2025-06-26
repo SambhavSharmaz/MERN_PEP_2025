@@ -1,0 +1,1 @@
+Day 10: today we'll be learning about the following topics:

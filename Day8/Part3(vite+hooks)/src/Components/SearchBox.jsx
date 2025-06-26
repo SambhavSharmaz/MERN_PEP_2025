@@ -27,7 +27,6 @@ const SearchBox = () => {
     const handlesearch = (e) => {
         // searchText = e.target.value;
         // console.log(searchText);
-        // alert("Button Clicked")
         remote(e.target.value);
         console.log(monitor);
     };
