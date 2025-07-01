@@ -6,7 +6,7 @@ import App from './App1.jsx'
 const rootDOM = document.getElementById('root');
 const reactroot = reactDOM.createRoot(rootDOM);
 reactroot.render(
-  <StrictMode>
+  // <StrictMode>
     <App />
-  </StrictMode>,
+  // </StrictMode>,
 )

@@ -24,6 +24,7 @@ const App = () => {
     setuser((prev)=>{
       const temp = [...prev];
       temp.push(name, city);
+      localStorage.setItem("User", temp);
       return temp;
     })
   }
