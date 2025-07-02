@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router";
-import { HomePage } from "./pages/Homepage";
-import { SearchPage } from "./pages/Searchpage";
+import { HomePage } from "./pages/HomePage";
+import { SearchPage } from "./pages/SearchPage";
 import { ViewPage } from "./pages/ViewPage.jsx";
 import { useState } from "react";
 
