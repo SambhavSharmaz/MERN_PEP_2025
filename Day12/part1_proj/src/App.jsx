@@ -1,17 +1,25 @@
-import {BrowserRouter, Routes, Route} from "react-router"
+import { BrowserRouter, Routes, Route } from "react-router";
+import { HomePage } from "./pages/Homepage";
+import { SearchPage } from "./pages/Searchpage";
+import { ViewPage } from "./pages/ViewPage.jsx";
+import { useState } from "react";
+
+// import { NotFoundPage} from "./pages/NotFoundpage";
 const App = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
+    const [text, setText] = useState("");
+    const handleSearchText = (e) => {
+        setText(e);
+    }
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<HomePage text={text} handleSearchText={handleSearchText}/>} />
+                <Route path="/search" element={<SearchPage text={text} handleSearchText={handleSearchText}/> } />
+                <Route path="/view" element={<ViewPage/>} />
+                {/* <Route path="*" element={<NotFoundPage />} /> */}
+            </Routes>
+        </BrowserRouter>
+    );
+};
 
-        <Route path="/" element={<h1>Home</h1>}></Route>
-        <Route path="/about" element={<h1>About</h1>}></Route>
-        <Route path="/contact" element={<h1>Contact</h1>}></Route>
-        <Route path="/login" element={<h1>Login</h1>}></Route>
-        <Route path="/signup" element={<h1>Signup</h1>}></Route>
-      </Routes>
-    </BrowserRouter>
-  )
-}
-
-export {App};
+export default App;
