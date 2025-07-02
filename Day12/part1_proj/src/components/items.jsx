@@ -14,9 +14,9 @@ const Items = () =>{
         getdata();
     },[]);
      return (
-    <div className="item-container">
+    <div className="flex flex-wrap justify-center gap-4 p-4">
       {data.map((item) => (
-        <p className="items">{item.name}</p>  // Display each category
+        <p className="bg-white border border-gray-300 rounded-lg px-4 py-2 shadow-sm hover:shadow-md transition duration-200">{item.name}</p> 
       ))}
     </div>
   );
