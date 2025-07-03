@@ -1,7 +1,6 @@
-import './ProductResultCard.css';
 import { useNavigate } from 'react-router';
 
-const ProductResultCard = ({ product }) => {
+const ProductResultCard = ( product ) => {
     const navigate = useNavigate();
     const { id, title, price, thumbnail } = product;
 

@@ -16,9 +16,11 @@ const SearchPage = (props) => {
 
     },[])
     useEffect(() => {
-        if (text) {
-            setSearchParams({ text });
-        }
+        console.log("🟡 : text:", text);
+        setSearchParams((prev) => {
+            prev.set("text", text);
+            return prev;
+        });
     }, [text]);
     return(
         <div>
