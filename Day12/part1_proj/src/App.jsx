@@ -16,8 +16,8 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<HomePage text={text} handleSearchText={handleSearchText}/>} />
                 <Route path="/search" element={<SearchPage text={text} handleSearchText={handleSearchText}/> } />
-                <Route path="/:productId/view" element={<ViewPage />} />
-                <Route path="/components/:categoryName/view" element={<H_Components />} />
+                <Route path="/:productId/view" element={<ViewPage text={text} handleSearchText={handleSearchText}/>} />
+                <Route path="/components/:categoryName/view" element={<H_Components text={text} handleSearchText={handleSearchText}/>} />
                 {/* <Route path="*" element={<NotFoundPage />} /> */}
             </Routes>
         </BrowserRouter>

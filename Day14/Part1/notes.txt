@@ -1,0 +1,29 @@
+React Js is single thread while Node Js is multi thread? why because react js is a UI library and node js is a server side language
+
+UI library - It is a library that is used to build user interfaces, why its single thread? why because its only responsible for building the UI and not for handling the server side logic
+Server side language - It is a language that is used to build server side applications, why its multi thread? why because its responsible for handling the server side logic and not for building the UI
+
+Async Api vs Sync Api
+Async Api - Api that takes time to execute/ All the work is being done by the manager but not urgently, instead the manager is free to do other work and will assign the work to the worker when he is free
+Sync Api - Api that executes immediately/ All the work is being done by the manager and he is not free to do other work until the work is completed
+
+Async Api - Promise, Async/Await
+Sync Api - Callbacks
+
+Thread - It is a sequence of instructions that can be executed independently of other threads
+
+Promise - It is a javascript object that links the producing code and consuming code
+producing code - Code that takes time to execute
+consuming code - Code that is executed after the producing code is executed
+
+IMG: c:\Users\Sambhav\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\464D828B85B0BED98E80ADE0A5C43B0F\WhatsApp Image 2025-07-03 at 09.56.11_43fb2694.jpg
+
+IMG: c:\Users\Sambhav\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\798ED7D4EE7138D49B8828958048130A\WhatsApp Image 2025-07-03 at 10.00.32_d80be44f.jpg
+
+Sir if we are integrating a DataBase in our application, which would be better to use - Async or Sync?
+Async - because we don't want to block the main thread, we want to let the main thread to do other work while the DB is being integrated
+Sync - because we want to wait for the DB to be integrated before we can proceed with other work
+
+41(16)hexa to (?)10 is 65
+
+ASCII (extended ASCII) limited is 128 characters (0-127) and extended ASCII is 256 characters (0-255) and unicode is 1,114,112 characters (0-1,114,111) and utf-8 is 1,114,112 characters (0-1,114,111)
