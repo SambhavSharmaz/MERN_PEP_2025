@@ -4,6 +4,8 @@ dotenv.config();
 const express = require('express');
 const app = express();
 
+require("./Config/db.js");
+
 const { apiRouter } = require("./Api/V1/routes.js");
 
 app.use(express.json());

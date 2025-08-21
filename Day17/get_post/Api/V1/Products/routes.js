@@ -1,5 +1,5 @@
 const express = require('express');
-const { createProdController } = require('./controllers');
+const { createProdController,createAllProducts , updateProdController, deleteProdController} = require('./controllers');
 const productRouter = express.Router();
 
 productRouter.get('/', (req, res) => {
@@ -11,5 +11,11 @@ productRouter.get('/', (req, res) => {
 });
 
 productRouter.post('/', createProdController)
+
+productRouter.delete('/:prodId', deleteProdController)
+
+productRouter.patch('/:prodId', updateProdController)
+
+productRouter.get('/all', createAllProducts)
 
 module.exports = { productRouter };

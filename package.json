@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "http": "^0.0.1-security",
+    "lottie-react": "^2.4.1",
+    "mongodb": "^6.18.0",
+    "mongoose": "^8.17.0",
     "nodemon": "^3.1.10"
   }
 }
